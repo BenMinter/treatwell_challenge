@@ -22,6 +22,7 @@ public class BoxBuilder {
 	
 	@Override
 	public String toString(){
+		//impossible box given constraints
 		if(width <= 1 || height <= 1)
 			return "";
 		String box = "";
@@ -91,7 +92,7 @@ public class BoxBuilder {
 	}
 
 	public static void main(String[] args) {
-		BoxBuilder boxer = new BoxBuilder(20,20);
+		BoxBuilder boxer = new BoxBuilder(8,4);
 		System.out.print(boxer.toString());
 	}
 
